@@ -26,7 +26,7 @@ class FavFlowers extends React.Component {
   handelDelete=(idx)=>{
     let id=this.state.dataFav[idx]._id
 
-    axios.delete(`${process.env.REACT_APP_HERUKO}/deleeFavt/${id}`).then(result=>{
+    axios.delete(`${process.env.REACT_APP_HERUKO}/deleteFav/${id}`).then(result=>{
 this.setState({
   dataFav:result
 })
